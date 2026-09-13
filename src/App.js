@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/car_project">
       <div className="app">
         <Navbar />
         <main className="main-content">
