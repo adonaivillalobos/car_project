@@ -28,6 +28,8 @@ jobs:
         run: npm ci
 
       - name: Build React app
+        env:
+          REACT_APP_OMDB_KEY: ${{ secrets.REACT_APP_OMDB_KEY }}
         run: npm run build
 
       - name: Setup Pages
